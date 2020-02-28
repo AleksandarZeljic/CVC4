@@ -43,6 +43,8 @@ operator ARCCOTANGENT 1 "arc cotangent"
 
 operator SQRT 1 "square root"
 
+operator RELU 1 "relu"
+
 constant DIVISIBLE_OP \
         ::CVC4::Divisible \
         ::CVC4::DivisibleHashFunction \
@@ -128,6 +130,8 @@ typerule ARCSECANT "SimpleTypeRule<RReal, AReal>"
 typerule ARCCOTANGENT "SimpleTypeRule<RReal, AReal>"
 
 typerule SQRT "SimpleTypeRule<RReal, AReal>"
+
+typerule RELU "SimpleTypeRule<RReal, AReal>"
 
 nullaryoperator PI "pi"
 

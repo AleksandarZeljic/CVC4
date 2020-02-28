@@ -1,0 +1,4 @@
+antlr3debughandlers.lo: src/antlr3debughandlers.c \
+ /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:
