@@ -90,7 +90,7 @@ class NonlinearExtension {
    *   ( exp[vars[i]] ) => vars[i] = subs[i]
    * where exp[vars[i]] is a set of assertions
    * that hold in the current context. We call { vars -> subs } a "derivable
-   * substituion" (see Reynolds et al. FroCoS 2017).
+   * substitution" (see Reynolds et al. FroCoS 2017).
    */
   bool getCurrentSubstitution(int effort, const std::vector<Node>& vars,
                               std::vector<Node>& subs,
