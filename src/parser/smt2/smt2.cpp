@@ -80,9 +80,9 @@ void Smt2::addTranscendentalOperators()
   addOperator(kind::SQRT, "sqrt");
 }
 
-void smt2::addNeuralNetworkOperators()
+void Smt2::addNeuralNetworkOperators()
 {
-  addoperator(kind::RELU, "relu");
+  addOperator(kind::RELU, "relu");
 }
 
 void Smt2::addQuantifiersOperators()
