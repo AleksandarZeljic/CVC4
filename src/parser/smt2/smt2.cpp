@@ -80,6 +80,11 @@ void Smt2::addTranscendentalOperators()
   addOperator(kind::SQRT, "sqrt");
 }
 
+void smt2::addNeuralNetworkOperators()
+{
+  addoperator(kind::RELU, "relu");
+}
+
 void Smt2::addQuantifiersOperators()
 {
   if (!strictModeEnabled())
@@ -324,6 +329,7 @@ void Smt2::addTheory(Theory theory) {
     {
       addOperator(kind::ABS, "abs");
     }
+    addNeuralNetworkOperators();
     break;
 
   case THEORY_TRANSCENDENTALS:

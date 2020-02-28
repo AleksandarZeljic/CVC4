@@ -609,6 +609,8 @@ class Smt2 : public Parser
 
   void addArithmeticOperators();
 
+  void addNeuralNetworkOperators();
+
   void addTranscendentalOperators();
 
   void addQuantifiersOperators();
